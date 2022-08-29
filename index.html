@@ -4,23 +4,66 @@
     <meta charset="utf-8">
     <title>Spotify Common Room</title>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link rel="stylesheet" href="file:///Users/ramzihijjawi/Downloads/spotify-common-room/assets/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/main.css" charset="utf-8">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer type="text/javascript" src="file:///Users/ramzihijjawi/Downloads/spotify-common-room/assets/js/main.js"></script>
+    <script defer type="text/javascript" src="./assets/js/main.js"></script>
     <script type="text/javascript">
-      let clientID = '081b69bc044e41d59d9d28bb6c8a4305';
-      let clientSec = btoa('õþµsf»çgõã\x8D8÷\x9F_sß={Gvq·\x9F');
     </script>
   </head>
   <body>
-    <div class="wrapper">
-	<div class="search_box">
-		<div class="search_btn"><i class="fas fa-search"></i></div>
-    <form id="form" method="POST">
-      <input type="text" id="spotifySearch" class="input_search" placeholder="What are you looking for?">
-    </form>
-	</div>
-</div>
+    <div class="wrapper" style="min-height:30vh">
+	    <div class="search_box">
+		      <div class="search_btn"><i class="fas fa-search"></i></div>
+          <form id="form" method="POST">
+            <input autocomplete="off" type="text" id="spotifySearch" class="input_search" placeholder="What song are you looking for?">
+          </form>
+      </div>
+  <br>
+    </div>
+    <div class="results">
+      <div style="background: rgba(100, 63, 239, 0.75);" class="search_box">
+       
+        <div class="column-4 project-1">
+          <div class="albumart"><img id="albumartimg1" src="" alt=""></div><div class="titleCard"><span id="trackTitle1"></span></div>
+        </div>
+        
+        <div class="column-4 project-2">
+          <div class="albumart"><img id="albumartimg2" src="" alt=""></div><div class="titleCard"><span id="trackTitle2"></span></div>
+        </div>
+        
+        <div class="column-4 project-3">
+          <div class="albumart"><img id="albumartimg3" src="" alt=""></div><div class="titleCard"><span id="trackTitle3"></span></div>
+        </div>
+        
+        <div class="column-4 project-4">
+          <div class="albumart"><img id="albumartimg4" src="" alt=""></div><div class="titleCard"><span id="trackTitle4"></span></div>
+        </div>
+        
+        <div class="column-4 project-5">
+          <div class="albumart"><img id="albumartimg5" src="" alt=""></div><div class="titleCard"><span id="trackTitle5"></span></div>
+        </div>
+
+        <div class="column-4 project-6">
+          <div class="albumart"><img id="albumartimg6" src="" alt=""></div><div class="titleCard"><span id="trackTitle6"></span></div>
+        </div>
+
+        <div class="column-4 project-7">
+          <div class="albumart"><img id="albumartimg7" src="" alt=""></div><div class="titleCard"><span id="trackTitle7"></span></div>
+        </div>
+
+        <div class="column-4 project-8">
+          <div class="albumart"><img id="albumartimg8" src="" alt=""></div><div class="titleCard"><span id="trackTitle8"></span></div>
+        </div>
+
+        <div class="column-4 project-9">
+          <div class="albumart"><img id="albumartimg9" src="" alt=""></div><div class="titleCard"><span id="trackTitle9"></span></div>
+        </div>
+
+        <div class="column-4 project-10">
+          <div class="albumart"><img id="albumartimg10" src="" alt=""></div><div class="titleCard"><span id="trackTitle10"></span></div>
+        </div>
+      </div>  
+    </div>
   </body>
   <footer>
 

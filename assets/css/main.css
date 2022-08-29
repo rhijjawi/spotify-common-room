@@ -17,7 +17,44 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-
+.column-4 {
+  float: left;
+  width: 21%;
+  padding: 10px;
+  margin:20px;
+  height: 250px;
+  outline: solid;
+  border-radius: 25px;
+  background: black;
+}
+.results {
+	text-align: -webkit-center;
+    min-width: 100%
+}
+.albumart {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.albumart img {
+    flex-shrink: 0;
+	max-width: 128px;
+    max-height: 128px;
+	border-radius: 15px;
+}
+.search_box{
+	background: #643fef;
+	position: relative;
+	padding: 15px;
+	border-radius: 50px;
+	
+	max-width: 100%;
+}
+.titleCard {
+	color: white;
+    padding-top: 10px;
+}
 .search_box{
 	background: #643fef;
 	position: relative;
