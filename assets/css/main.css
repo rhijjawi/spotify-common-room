@@ -22,7 +22,7 @@ body{
   width: 21%;
   padding: 10px;
   margin:20px;
-  height: 250px;
+  height: 300px;
   outline: solid;
   border-radius: 25px;
   background: black;
@@ -38,22 +38,34 @@ body{
     overflow: hidden;
 }
 .albumart img {
-    flex-shrink: 0;
+  flex-shrink: 0;
 	max-width: 128px;
-    max-height: 128px;
+  max-height: 128px;
 	border-radius: 15px;
+	border: 2px solid #FFFF;
+}
+.addtoqueue {
+	display: flex;
+	height: 100%;
+	max-height: 50%;
+	max-width: 90%;
+}
+.addtoqueuebtn {
+	display: inline-block;
+  align-self: flex-end;
 }
 .search_box{
 	background: #643fef;
 	position: relative;
 	padding: 15px;
 	border-radius: 50px;
-	
+
 	max-width: 100%;
 }
 .titleCard {
 	color: white;
-    padding-top: 10px;
+  padding-top: 10px;
+  height: 0;
 }
 .search_box{
 	background: #643fef;
