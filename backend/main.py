@@ -30,12 +30,17 @@ def getToken():
 
 @app.route('/search', methods=["POST"])
 def search():
-    search = requests.get(f'https://api.spotify.com/v1/search?type=track&market=UG&include_external=audio&q={request.json["query"]}', headers={'Authorization': f'Bearer {getToken()}'})
+    search = requests.get(f'https://api.spotify.com/v1/search?type=track,album&market=UG&include_external=audio&q={request.json["query"]}', headers={'Authorization': f'Bearer {getToken()}'})
     return search.json()
+
+@app.route('/queue', methods=["POST"])
+def addtoqueue():
+    queue = requests.get(f'https://api.spotify.com/v1/me/player/devices', headers={'Authorization': f'Bearer {getToken()}'})
+    return queue.json()
 
 @app.route('/', methods=["POST"])
 def main():
-    return getToken() 
+    return getToken()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5555, debug=True)
