@@ -6,7 +6,6 @@
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="stylesheet" href="/Users/ramzihijjawi/Downloads/spotify-common-room-main/assets/css/main.css" charset="utf-8">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer type="text/javascript" src="/Users/ramzihijjawi/Downloads/spotify-common-room-main/assets/js/main.js"></script>
     <script type="text/javascript">
     </script>
   </head>
@@ -24,8 +23,14 @@
       <div style="background: rgba(100, 63, 239, 0.75); overflow-x: auto;" class="search_box" id="search_box">
       </div>
     </div>
+    <div id="queuelist" hidden class="results">
+      <div style="background: rgba(100, 63, 239, 0.75); overflow-x: auto; max-height: 100px" class="search_box" id="queue"><div style="margin-left: 10px"><ol id="qlist"></ol></div></div>
+    </div>
   </body>
   <footer>
-
+    <script type="text/javascript" src="/Users/ramzihijjawi/Downloads/spotify-common-room-main/assets/js/main.js"></script>
+    <script>
+    //setInterval(async()=>{      console.log(await getQueue())},5000);
+    </script>
   </footer>
 </html>
